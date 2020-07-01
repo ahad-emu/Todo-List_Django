@@ -25,7 +25,7 @@ Static_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'gff+p8mk77z(9q2ymtnpd3eb*oag%6c3_aq9^p6!_$&+-@!n_d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["ahademu-todolist.herokuapp.com", "127.0.0.1"]
 
@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'TODO_LIST.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': ['todolist', 'dfsuu8lm6soqab'],
-        'USER': ['postgres', 'swzttddtqqfsme'],
-        'PASSWORD': ['P@$$w.rd','a1f441319a2198a5d6659e761fe03789e716009a045401494d157ce093b2a533'],
-        'HOST': ['localhost', 'ec2-3-222-150-253.compute-1.amazonaws.com'],
+        'NAME': 'todolist',
+        'USER': 'postgres',
+        'PASSWORD': 'P@$$w.rd',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
