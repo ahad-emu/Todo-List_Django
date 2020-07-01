@@ -1,0 +1,44 @@
+{% extends 'apps/base.html' %}
+<!DOCTYPE html>
+{% load staticfiles %}
+{% block content %}
+<div class="bg-light">
+  <div class="text-center">
+    <div class="font-weigh-bold lead pt-2">
+      <h2>HI! I'M AHAD EMU</h2>
+    </div>
+    <div class="font-italic pb-2">
+      <h5>FULL STACK WEB DEVELOPER FROM DHAKA, BANNGLADESH</h5>
+    </div>
+  </div>
+</div>
+<div class="text-center">
+  <img class="img img-fluid img-thumbnail"src="{% static 'images/profile.jpg' %}" alt="profile picture" height="300px" width="280px">
+</div>
+<div class="bg-light pt-4 pb-3">
+  <div class="text-center">
+    <h2>About Me</h2>
+    <div class="container mt-3 mb-3">
+      <p>Welcome to my mini website. My name is <strong>Abul Ahad Emu</strong> and most of my friends called me EMU for shorts. I am <b>Full Stack Web Developer</b> and currently staying in Narayanganj.
+        This is my first django Website. This site takes you an input like string or any text and it counts the number of words in your text, also counts the similiar word in the text.
+      </p>
+    </div>
+  </div>
+  <div style="width:100%" align="center" class="mb-3">
+    <table class="">
+      <tr>
+        <td>Name : </td>
+        <td>Abul Ahad Emu</td>
+      </tr>
+      <tr>
+        <td>Email : </td>
+        <td>ahademu99@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Mobile No : </td>
+        <td>+8801930892563</td>
+      </tr>
+    </table>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "apps/base.html" %}
+
+{% block content %}
+
+<div class="container-fluid">
+  <h1 class="text-center mt-3 mb-3">INSERT AN ITEM</h1>
+  <div class="form" style='background-color: #e9ecef'>
+    <form class="" method="POST" action="{% url 'insert' %}">
+      {% csrf_token %}
+      <div class="form-group">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" class="from-control" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label for="roll">Roll:</label><br>
+        <input type="text" id="roll" name="roll" class="from-control">
+      </div>
+      <div class="form-group">
+        <label for="section">Section:</label><br>
+        <input type="text" id="section" name="section" class="from-control">
+      </div>
+      <button type="submit" name="submit" class="btn btn-primary">submit</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

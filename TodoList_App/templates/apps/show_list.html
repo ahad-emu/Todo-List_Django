@@ -1,0 +1,39 @@
+{% extends "apps/base.html" %}
+
+{% block content %}
+
+<h1 class="text-center mt-3 mb-3">SHOW ALL ITEM IN THE LIST</h1>
+
+  {% if messages %}
+    {% for message in messages %}
+      <div class="text-center alert alert-success alert-dismissible" id="myAlert">
+        {{ message }}
+      </div>
+    {% endfor %}
+  {% endif %}
+
+<div class="container">
+  {% if all_information %}
+    <table class="table table-dark table-bordered table-striped">
+      <thead class="thead-light">
+        <tr>
+          <th>Name</th>
+          <th>Roll</th>
+          <th>Section</th>
+          <th>Deleted Item</th>
+        </tr>
+      </thead>
+    {% for item in all_information %}
+      <tbody>
+        <tr>
+          <td><a href="{% url 'edit' item.id %}">{{ item.name }}</a></td>
+          <td>{{ item.roll }}</td>
+          <td>{{ item.section }}</td>
+          <td><a href="{% url 'delete' item.id %}">Delete</a></td>
+        </tr>
+      </tbody>
+    {% endfor %}
+    </table>
+  {% endif %}
+</div>
+{% endblock %}
