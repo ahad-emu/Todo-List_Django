@@ -25,7 +25,7 @@ Static_DIR = os.path.join(BASE_DIR, "static")
 SECRET_KEY = 'gff+p8mk77z(9q2ymtnpd3eb*oag%6c3_aq9^p6!_$&+-@!n_d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["ahademu-todolist.herokuapp.com", "127.0.0.1"]
 
