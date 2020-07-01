@@ -6,7 +6,7 @@ from django.contrib import messages
 
 # Create your views here.
 def home(request):
-    return HttpResponse("welcome")
+    return render(request, "apps/home.html")
 
 def about(request):
     return render(request, "apps/about.html")
