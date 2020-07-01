@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'TODO_LIST.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'todolist',
-        'USER': 'postgres',
-        'PASSWORD': 'P@$$w.rd',
-        'HOST': 'localhost',
+        'NAME': ['todolist', 'dfsuu8lm6soqab'],
+        'USER': ['postgres', 'swzttddtqqfsme'],
+        'PASSWORD': ['P@$$w.rd','a1f441319a2198a5d6659e761fe03789e716009a045401494d157ce093b2a533'],
+        'HOST': ['localhost', 'ec2-3-222-150-253.compute-1.amazonaws.com'],
         'PORT': '5432',
     }
 }
